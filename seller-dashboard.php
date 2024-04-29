@@ -107,7 +107,7 @@ if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
 
 </div>
 <div class="wishlist">
-<?php if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {?>
+<?php if (isset($_SESSION['username']) && !empty($_SESSION['username'])&&($user['U_role'] == "S")) {?>
  <span style="font-size:23px;">Sale another house</span>
   <form id="houseForm" method="post" enctype="multipart/form-data">
         <label for="city">City:</label>
